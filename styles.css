@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: center;
+    background: url(./pexels-jeff-wang-462402.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+.clock-main{
+    display: flex;
+}
+.clock-main div{
+    margin: 5px;
+    position: relative;
+    width: 100px;
+}
+.clock-main span{
+    width: 100px;
+    height: 80px;
+    background: slateblue ;
+    opacity: .8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.clock-main .Text{
+    height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: 0.8;
+}
+.clock-main #amPm{
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: green;
+}
+
+
+
+
+#Years, span{
+    width: 110px;
+}
+.clock-main .More-space{
+    width: 110px;
+    height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: 0.8;
+}
+
