@@ -16,8 +16,7 @@ function UpdateClock(){
     let getMonth = month_a[Month_Computer.getMonth()];
     MonthEl.innerHTML = getMonth;
     let day_a = new Date();
-    
-DayEl.innerHTML = day_a.getDate();
+    DayEl.innerHTML = day_a.getDate();
     
     if (h > 12){
         h = h- 12;
