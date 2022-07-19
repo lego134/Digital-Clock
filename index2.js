@@ -1,3 +1,4 @@
+import WEATHER from "./script.js";
 let weather = {
   fetchWeather: function (city) {
     
@@ -5,7 +6,7 @@ let weather = {
       
       "https://api.openweathermap.org/data/2.5/weather?q="+ 
       city + "&units=imperial&appid=" 
-      + "3aa6ad47cf9fdbc1ed94826a8c0a2f8d"
+      + WEATHER
     )
       .then((response) => {
         if (!response.ok) {
