@@ -9,36 +9,56 @@
 </head>
 <body>
      <h2>Digital Clock</h2>
-     <div class="clock-main">
-            <div>
+    <div class="main-clock">
+     <div class="clock-child">
+            <div class="clock-number-location">
                 <span id="Hour">00</span>
                 <span class="Text">Hours</span>
             </div>
-            <div>
+            <div class="clock-number-location">
                 <span id="Minutes">00</span>
                 <span class="Text">Minutes</span>
             </div>
-            <div>
+            <div class="clock-number-location">
                 <span id="Secound">00</span>
                 <span class="Text">Secound</span>
             </div>
-            <div>
+            <div class="clock-number-location">
                 <span id="amPm">AM</span>
             </div>
-            <div>
+        </div>
+        <div class= "clock-child">
+            <div class="clock-number-location">
                 <span id="Month"></span>
                 <span class="Text">Month</span>
             </div>
-            <div>
+            <div class="clock-number-location">
                 <span id="Days">00</span>
                 <span class="Text">Day</span>
-            </div>
-            <div  style="display: inline-block">
+            </div >
+            <div class="clock-number-location">
                 <span id="Years">0000</span>
                 <span class="Text More-space">Year</span>
             </div>
         </div>
-
-     <script src="index.js"></script>
+    </div>     
+        <h2>Weather</h2>
+    <section>
+        <div class="Weather-main">
+            <div class="search">
+                <input type="text" class="input-Weather" id="input-Weather" placeholder="Search" autofocus autocomplete="off">
+                <button class="Search" id="search"
+              >&#x1F50D
+                </button>
+            <h2 class="city" id="city">Weather in Denver</h2>
+            <p class="temperature" id="temperature">88°F</p>
+            <img class="icon" src="pexels-jeff-wang-462402.jpg" alt="">
+            <p class="image-weather" id="image-weather">Broken cloud</p>
+            <p class="humidity" id="humidity">Humidity:66%</p>
+            <p class="Wind-speed" id="Wind-speed">Wind:64m/h</p>
+        </div>
+    </section>
+    <script type="module"src="index.js"></script>
+    <script type="module" src="weather.js" defer></script>
 </body>
 </html>

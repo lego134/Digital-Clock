@@ -19,15 +19,21 @@ h2{
     color: white;
 }
 
-.clock-main{
-    display: flex;
+.main-clock{
+    text-align: center;
+    justify-content: center;
+    width: 0 auto;
 }
-.clock-main div{
+.clock-child{
+    display: flex;
+    flex-direction:row;
+}
+.clock-child div{
     margin: 5px;
     position: relative;
     width: 100px;
 }
-.clock-main span{
+.clock-child span{
     width: 100px;
     height: 80px;
     background: slateblue ;
@@ -39,7 +45,7 @@ h2{
     font-size: 50px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
-.clock-main .Text{
+.clock-child .Text{
     height: 30px;
     font-size: 15px;
     text-transform: uppercase;
@@ -47,7 +53,7 @@ h2{
     background: darkblue;
     opacity: 0.8;
 }
-.clock-main #amPm{
+.clock-child #amPm{
     bottom: 0;
     position: absolute;
     width: 60px;
@@ -57,12 +63,7 @@ h2{
 }
 
 
-
-
-#Years, span{
-    width: 110px;
-}
-.clock-main .More-space{
+.clock-child .More-space{
     width: 110px;
     height: 30px;
     font-size: 15px;
@@ -72,3 +73,211 @@ h2{
     opacity: 0.8;
 }
 
+#Years, span{
+    width: 110px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 600px;
+    background-color: black;
+    opacity: .9;
+    border-radius: 20px;
+    padding: 5px;        
+}
+.input-Weather{
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    font-size: 25px;
+    opacity: 1;
+    color: white;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.input-Weather::placeholder{
+        font-family: bold;
+        font-family: cursive;
+}
+.Search{
+    background-color: black;
+}
+#Search{
+    font-size: 30px;
+}
+.city{
+    margin-top: 25px;
+    color: white;
+}
+.temperature{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+img{
+    height: 25px;
+    width: 25px;
+}
+.image-weather{
+    display: inline-flex;
+    color: white;
+    font-size: 25px;
+}
+.image-weather{
+    color: white;
+}
+.humidity{
+    font-size: 20px;
+    color: white;
+}
+.Wind-speed{
+    font-size: 20px;
+    color: white;
+}
+@media all and (max-width: 768px){
+    body{
+        margin: 0px;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        box-sizing: border-box;
+        justify-content: center;
+        background: url(./pexels-jeff-wang-462402.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    h2{
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+    }
+    .main-clock{
+        text-align: center;
+        justify-content: center;
+        width: 0 auto;
+    }
+    .clock-child{
+        margin-left: 9%;
+        padding: 0px;
+    }
+    .clock-child div{
+        position: relative;
+        width: 100px;
+    }
+    .clock-child span{
+        width: 100px;
+        height: 50px;
+        background: slateblue ;
+        opacity: .8;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .clock-child .Text{
+        height: 30px;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: darkblue;
+        opacity: 0.8;
+    }
+    .clock-child #amPm{
+        bottom: 0;
+        position: absolute;
+        width: 30px;
+        height: 50px;
+        font-size: 20px;
+        margin-right: 10%;
+    }
+    
+    
+    .clock-child .More-space{
+        width: 110px;
+        height: 30px;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background: darkblue;
+        opacity: 0.8;
+    }
+    .main-clock{
+        text-align: center;
+        justify-content: center;
+        width: 0 auto;
+    }
+   
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 400px;
+        background-color: black;
+        opacity: .9;
+        border-radius: 20px;
+        padding: 5px; 
+        margin-top: 0px;       
+    }
+    .input-Weather{
+        text-align: center;
+        justify-content: center;
+        background-color: black;
+        font-size: 25px;
+        opacity: 1;
+        color: white;
+        border-radius: 25px;
+        margin-top: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .input-Weather::placeholder{
+            font-family: bold;
+            font-family: cursive;
+    }
+    .Search{
+        background-color: black;
+    }
+    #Search{
+        font-size: 30px;
+    }
+    .city{
+        margin-top: 25px;
+        color: white;
+    }
+    .temperature{
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    img{
+        height: 25px;
+        width: 25px;
+    }
+    .image-weather{
+        display: inline-flex;
+        color: white;
+        font-size: 25px;
+    }
+    .image-weather{
+        color: white;
+    }
+    .humidity{
+        font-size: 20px;
+        color: white;
+    }
+    .Wind-speed{
+        font-size: 20px;
+        color: white;
+    }
+}

@@ -5,6 +5,7 @@ const amPmEl = document.getElementById("amPm");
 const YearsEl = document.getElementById("Years");
 const DayEl = document.getElementById("Days");
 const MonthEl = document.getElementById("Month");
+
 function UpdateClock(){
     let h = new Date().getHours();
     let m = new Date().getMinutes();
@@ -16,8 +17,7 @@ function UpdateClock(){
     let getMonth = month_a[Month_Computer.getMonth()];
     MonthEl.innerHTML = getMonth;
     let day_a = new Date();
-    
-DayEl.innerHTML = day_a.getDate();
+    DayEl.innerHTML = day_a.getDate();
     
     if (h > 12){
         h = h- 12;
@@ -31,15 +31,15 @@ DayEl.innerHTML = day_a.getDate();
     Secound.innerText = s;
     amPmEl.innerText = ampm;
     YearsEl.innerText = y;
- 
+    
    
 
-
+    
     setInterval(function(){ 
         UpdateClock()
     }, 1000);
 
 
-
+    
 };
 UpdateClock()
