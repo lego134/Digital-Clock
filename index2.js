@@ -37,10 +37,8 @@ let weather = {
   },
 };
 
-document.querySelector(".search button").addEventListener("touch", function () {
-  weather.search();
-});
-document.querySelector(".search button").addEventListener("click", function () {
+
+document.querySelector(".search button").addEventListener("click", "touch", function () {
   weather.search();
 });
 
