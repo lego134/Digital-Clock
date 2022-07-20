@@ -228,17 +228,18 @@ img{
         border-radius: 20px;
         padding: 5px; 
         margin-top: 0px;
-        margin-left: 5%;       
+        margin-left: 3%;       
     }
     .city{
         margin-top: 20px;
         color: white;
-        margin: 10px;
+        margin: 5px;
     }
     button{
         display: block;
-        width: 100%;
+        width: 389px;
         font-size: 20px;
+        padding: 1px 2px;
     }
     .input-Weather{
         text-align: center;
@@ -248,9 +249,8 @@ img{
         opacity: 1;
         color: white;
         border-radius: 0;
-        width: 97%;
         margin-top: 5px;
-        margin-right: 5px;
+        width: 380px;   
         cursor: pointer;
     }
     .input-Weather::placeholder{
@@ -267,6 +267,7 @@ img{
         font-size: 40px;
         font-weight: bold;
         padding-left: 20px;
+        margin: 10px;
     }
     
     .image-weather{
