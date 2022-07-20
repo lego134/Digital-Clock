@@ -222,12 +222,13 @@ img{
         justify-content: center;
         align-items: center;
         height: 400px;
-        width: 380px;
+        width: 400px;
         background-color: black;
         opacity: .9;
         border-radius: 20px;
         padding: 5px; 
-        margin-top: 0px;       
+        margin-top: 0px;
+        margin-left: 5%;       
     }
     .input-Weather{
         text-align: center;
