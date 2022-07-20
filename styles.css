@@ -230,6 +230,16 @@ img{
         margin-top: 0px;
         margin-left: 5%;       
     }
+    .city{
+        margin-top: 20px;
+        color: white;
+        margin: 10px;
+    }
+    button{
+        display: block;
+        width: 100%;
+        font-size: 20px;
+    }
     .input-Weather{
         text-align: center;
         justify-content: center;
@@ -237,7 +247,8 @@ img{
         font-size: 25px;
         opacity: 1;
         color: white;
-        border-radius: 25px;
+        border-radius: 0;
+        width: 97%;
         margin-top: 5px;
         margin-right: 5px;
         cursor: pointer;
@@ -255,18 +266,24 @@ img{
         color: white;
         font-size: 40px;
         font-weight: bold;
+        padding-left: 20px;
     }
     
     .image-weather{
         display: inline-flex;
         color: white;
         font-size: 25px;
+        padding-left: 25px;
     }
-   
+    .icon{
+        padding-left: 25px;
+    }
     .humidity{
         font-size: 20px;
+        padding-left: 20px;
     }
     .Wind-speed{
         font-size: 20px;
+        padding-left: 20px;
     }
 }
