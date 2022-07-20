@@ -281,7 +281,7 @@ img{
         color: white;
     }
 }
-@media all and (max-width: 300px){
+@media all and (max-width: 350px){
     body{
         margin: 0px;
         font-family: sans-serif;
