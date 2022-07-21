@@ -32,7 +32,9 @@ function UpdateClock(){
     amPmEl.innerText = ampm;
     YearsEl.innerText = y;
     
-   
+    setInterval(function(){ 
+        UpdateClock()
+    }, 1000);
 
     
 
