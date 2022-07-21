@@ -44,7 +44,7 @@ document.querySelector(".search button").addEventListener("click", function () {
 
 document
   .querySelector(".input-Weather")
-  .addEventListener("keyup", function (event) {
+  .addEventListener("keydown", function (event) {
     if (event.key == "Enter") {
       weather.search();
     }
