@@ -35,9 +35,7 @@ function UpdateClock(){
    
 
     
-    setInterval(function(){ 
-        UpdateClock()
-    }, 1000);
+
 
 
     
