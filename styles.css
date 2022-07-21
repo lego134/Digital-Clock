@@ -7,7 +7,7 @@ body{
     height: 100vh;
     box-sizing: border-box;
     justify-content: center;
-    background: url(./pexels-jeff-wang-462402.jpg);
+    background: url(./pexels-jeff-wang-462402.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }   
@@ -148,7 +148,7 @@ img{
         height: 100vh;
         box-sizing: border-box;
         justify-content: center;
-        background: url(./pexels-jeff-wang-462402.jpg);
+        background: url(./pexels-jeff-wang-462402.webp);
         background-repeat: no-repeat;
         background-size: cover;
     } 
