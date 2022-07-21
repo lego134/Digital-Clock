@@ -42,12 +42,4 @@ document.querySelector(".search button").addEventListener("click", function () {
   weather.search();
 });
 
-document
-  .querySelector(".input-Weather")
-  .addEventListener("keydown", function (event) {
-    if (event.key == "Enter") {
-      weather.search();
-    }
-  });
-
 weather.fetchWeather("Denver");
