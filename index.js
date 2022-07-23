@@ -31,15 +31,14 @@ function UpdateClock(){
     Secound.innerText = s;
     amPmEl.innerText = ampm;
     YearsEl.innerText = y;
-    
-    setInterval(function(){ 
-        UpdateClock()
-    }, 1000);
-
-    
-
-
-
+setTimeout(() => {
+    UpdateClock()
+}, 1000);
     
 };
+
+
+    
+
+
 UpdateClock()
