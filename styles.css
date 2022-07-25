@@ -53,6 +53,7 @@ h2{
     background: darkblue;
     opacity: 0.8;
 }
+
 .clock-child #amPm{
     bottom: 0;
     position: absolute;
@@ -82,8 +83,7 @@ section{
     justify-content: center;
     height: 400px;
     width: 600px;
-    background-color: black;
-    opacity: .9;
+    background: rgba( 0, 0,0, 0.9);
     border-radius: 20px;
     padding: 5px;        
 }
@@ -99,6 +99,7 @@ section{
     margin-right: 5px;
     cursor: pointer;
 }
+
 .input-Weather::placeholder{
         font-family: bold;
         font-family: cursive;
@@ -224,8 +225,7 @@ img{
         align-items: center;
         height: 400px;
         width: 100%;
-        background-color: black;
-        opacity: .9;
+        background: rgba(0, 0,0, 0.9);
         border-radius: 20px; 
         margin-top: 0px;
         margin-left: 6%;       
@@ -235,12 +235,7 @@ img{
         color: white;
         margin: 5px;
     }
-    button{
-        display: block;
-        width: 100%;
-        font-size: 20px;
-        padding: 0;
-    }
+    
     .input-Weather{
         text-align: center;
         justify-content: center;
@@ -259,10 +254,18 @@ img{
             font-family: bold;
             font-family: cursive;
     }
-    .Search{
-        background-color: black;
+   
+    #search{
+        display: block;
+        background-color: white;
+        border: 5px solid red;
+        border-radius: 10px;
     }
-    
+   
+    #search:hover{
+        color: red;
+        cursor: pointer;
+    }
     
     .temperature{
         color: white;
