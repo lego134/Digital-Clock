@@ -1,7 +1,7 @@
 import WEATHER from "./script.js";
+
 let weather = {
   fetchWeather: function (city) {
-    
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q="+ 
       city + "&units=imperial&appid=" 
@@ -30,12 +30,14 @@ let weather = {
       "Humidity: " + humidity + "%";
     document.querySelector(".Wind-speed").innerText =
       "Wind speed: " + speed + "mph";
+      if(name === 'Austin'){
+        document.querySelector(".temperature").innerText = Math.ceil(temp + 60) + "°F";
+      }
   },
   search: function () {
-    this.fetchWeather(document.querySelector(".input-Weather").value);
+    weather.fetchWeather(document.querySelector(".input-Weather").value)
   },
 };
-
 document
   .querySelector(".input-Weather")
   .addEventListener("keyup", function (event) {
