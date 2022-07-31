@@ -30,9 +30,6 @@ let weather = {
       "Humidity: " + humidity + "%";
     document.querySelector(".Wind-speed").innerText =
       "Wind speed: " + speed + "mph";
-      if(name === 'Austin'){
-        document.querySelector(".temperature").innerText = Math.ceil(temp + 60) + "°F";
-      }
   },
   search: function () {
     weather.fetchWeather(document.querySelector(".input-Weather").value)
