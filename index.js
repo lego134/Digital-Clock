@@ -19,10 +19,17 @@ function UpdateClock(){
     let day_a = new Date();
     DayEl.innerHTML = day_a.getDate();
     
-    if (h > 12){
-        h = h- 12;
+    if (h >= 12) {
+        if (h > 12) {
+            h = h - 12;
+        }
         ampm = "PM";
-    };
+    } else {
+        if (h == 0) {
+            h = 12;
+        }
+        ampm = "AM";
+    }
     h = h < 10 ? "0" + h: h;
     m = m < 10 ? "0" + m: m;
     s = s < 10 ? "0" + s: s;
@@ -34,11 +41,11 @@ function UpdateClock(){
 setTimeout(() => {
     UpdateClock()
 }, 1000);
-    
+
 };
 
-
+UpdateClock()
     
 
 
-UpdateClock()
+

@@ -46,4 +46,4 @@ document.querySelector(".search button").addEventListener("click", function () {
   weather.search();
 });
 
-weather.fetchWeather("Denver");
+weather.fetchWeather("Colorado Springs");
